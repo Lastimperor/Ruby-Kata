@@ -1,0 +1,15 @@
+#convert strings: every words capitalized 
+
+
+class String
+  def toJadenCase
+    self.split.map(&:capitalize).join(" ")
+  end
+end
+
+
+class String
+  def toJadenCase
+   split(/ |\_/).map(&:capitalize).join(" ")
+  end 
+end
